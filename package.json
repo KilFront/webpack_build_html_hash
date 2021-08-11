@@ -1,0 +1,23 @@
+{
+  "name": "webpack_html_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production --config ./build/webpack.config.js"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0"
+  }
+}
