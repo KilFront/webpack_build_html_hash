@@ -28,10 +28,12 @@ module.exports = {
       filename: 'css/[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: "./index.html",
-        minify: false,
-        chunks: ["index", "common"]
+      filename: 'index.html',
+      template: './src/pages/index.html',
+      minify: false,
+      scriptLoading: 'blocking',
+      chunks: ['xhr', 'util', 'index'],
+      chunksSortMode: "manual"
     }),
     new HtmlWebpackPlugin({
         filename: 'about.html',
